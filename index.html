@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BOHO</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/7b630d683f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <main>
+      <header id="nav">
+        <nav>
+          <ul>
+            <li><h1>BOHO</h1></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#lista">Menu</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+        </nav>
+        <a id="search-logo">
+          <i id="Kuva" class="fas fa-sign-in-alt" aria-hidden="true"></i>
+        </a>
+        <input
+          type="search"
+          id="search"
+          name="search"
+          placeholder="search..."
+        />
+      </header>
+      <section>
+        <header id="hero-image">
+          <h1>Tervetuloa BOHO ravintolaan</h1>
+          <p>Tutustu Albanialaiseen ruokaan</p>
+          <p>
+            Tutustu Lounari-ravintolan sekä lähialueiden ruokalistoihin ja löydä
+            oma suosikkisi
+          </p>
+          <button>Tutustu
+          </button>
+        </header>
+      </section>
+      <section class="rekistration">
+        <div class="container">
+          <div class="container-login">
+            <h2 id="form-title">Log In</h2>
+            <div id="Login" class="form-container active">
+              <form id="login-form">
+                <label for="login_username">Username</label>
+                <input
+                  type="text"
+                  id="login_username"
+                  name="username"
+                  placeholder="Username"
+                  minlength="3"
+                  pattern="^[a-zA-Z]+$"
+                  required
+                />
+                <label for="login_password">Password</label>
+                <input
+                  type="password"
+                  id="login_password"
+                  name="password"
+                  placeholder="Password"
+                  pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).+$"
+                  minlength="8"
+                  required
+                />
+                <button id="login-button" type="submit">Log In</button>
+              </form>
+            </div>
+          </div>
+
+          <div class="container-register">
+            <div id="register-form" class="form-container">
+              <form
+                id="register-form-content"
+                action="/submit_registration"
+                method="post"
+              >
+                <label for="register_username">Username</label>
+                <input
+                  type="text"
+                  id="register_username"
+                  name="username"
+                  placeholder="Username"
+                  minlength="3"
+                  pattern="^[a-zA-Z]+$"
+                  required
+                />
+                <label for="register_email">Email</label>
+                <input
+                  type="email"
+                  id="register_email"
+                  name="email"
+                  placeholder="Email"
+                  pattern="(?i).+@Metropolia.fi"
+                  required
+                />
+                <label for="register_password">Password</label>
+                <input
+                  type="password"
+                  id="register_password"
+                  name="password"
+                  placeholder="Password"
+                  minlength="8"
+                  maxlength="15"
+                  pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).+$"
+                  required
+                />
+                <label for="confirm_password">Confirm Password</label>
+                <input
+                  type="password"
+                  id="confirm_password"
+                  name="confirm_password"
+                  placeholder="Confirm Password"
+                  pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).+$"
+                  minlength="8"
+                  maxlength="15"
+                  required
+                />
+                <button id="signup-button" type="submit">Sign Up</button>
+              </form>
+            </div>
+            <button id="switch-btn" class="switch-btn">
+              Don't have an account?
+            </button>
+            <i id="Logo">Close</i>
+          </div>
+        </div>
+      </section>
+
+      <section class="home">
+        <div id="text">
+          <h3>RUOKALISTAT</h3>
+        </div>
+        <div id="lista">
+          <p> <a href="web-flexgrid/menu.html"></a>MENU</p>
+          <p>LOUNAS</p>
+        </div>
+      </section>
+      <section>
+        <div class="info">
+          <div>
+            <div id="A">
+              <img class="ravintola-kuva" src="img/OutsidechillBOHO.jpeg" alt="ravintola" />
+            </div>
+            <div id="B">
+              <p>
+                <span id="lause">Information</span>
+              </p>
+              <p id="teksti">About</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt consequatur facere iure itaque doloribus eaque ratione laboriosam ducimus inventore atque, non praesentium, fugiat repellendus distinctio vel, totam quo soluta deleniti?
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus molestiae id quos temporibus consequuntur omnis dolores cumque aliquid nisi quidem, debitis beatae animi enim porro, iusto saepe deleniti adipisci eveniet!
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt qui laborum obcaecati amet cum consectetur cumque aperiam unde modi doloribus, voluptate fugiat nisi culpa debitis quisquam ullam ipsa ea quam.
+
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+
+      <footer>MADE BY ENTOR</footer>
+    </main>
+  </body>
+</html>

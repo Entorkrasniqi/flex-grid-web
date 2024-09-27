@@ -1,0 +1,81 @@
+
+
+.grid-container {
+    border: 1px solid red;
+    max-width: 900px;
+    height: 600px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    gap: 10px;
+}
+
+.second-container {
+    border: 1px solid red;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px 200px;
+
+}
+.solu {
+    border: 4px solid rgb(239, 74, 74);
+    border-radius: 3px;
+    font-size: 30px;
+    padding: 5px;
+    background-color: aliceblue;
+    text-align: center;
+
+}
+
+.solu1 {
+    background-color: blue;
+    grid-column-start: 3;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 1;
+}
+
+grid6 {
+    background-color: brown;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+}
+
+.layout-names {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, 100px);
+    grid-template-areas: 
+    'header   header   header'
+    'navi   main   mainos'
+    'footer   footer   footer' ;
+}
+
+header {
+    grid-area: header;
+}
+nav {
+    grid-area: navi;
+}
+main {
+    grid-area: main;
+}
+aside {
+    grid-area: mainos;
+}
+footer {
+    grid-area: footer;
+}
+
+
+.grid-item {
+    border: 4px solid rgb(239, 74, 74);
+    border-radius: 3px;
+    font-size: 30px;
+    padding: 5px;
+    background-color: aliceblue;
+    text-align: center;
+}

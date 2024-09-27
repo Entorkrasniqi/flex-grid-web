@@ -1,0 +1,470 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif ,Verdana, Geneva, Tahoma;
+    position: relative;
+}
+
+/* Navigation Styles */
+#nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 244, 230);
+    height: 90px;
+    padding: 0 20px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav li {
+    margin-right: 5px;
+}
+
+nav h1 {
+    color: #000;
+}
+
+nav h1:hover {
+    color: rgb(144, 71, 11);
+}
+
+nav a {
+    display: flex;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+    width: 70px;
+}
+
+/* Header Styles */
+header a {
+    margin: 0 10px;
+    color: rgb(0, 0, 0);
+}
+
+header i {
+    margin: 20px;
+}
+
+#search-logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 10px; /* Add some space between the logo and the search bar */
+}
+
+header {
+    display: flex;
+    align-items: center;
+}
+
+/* Assuming there's a container for the search bar, adjust as needed */
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+header li a:hover {
+    color: black;
+    background-color: gainsboro;
+    border-radius: 10px;
+}
+
+header input {
+    padding: 4px;
+    border-radius: 10px;
+}
+
+header i:hover {
+    color: beige;
+}
+
+header input:hover,
+header input:focus {
+    background-color: beige;
+}
+
+/* Hero Image Styles */
+#hero-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    min-height: 300px;
+    max-height: 710px;
+    width: 100%;
+    background-color: rgb(210, 210, 205);
+    background-image: url("img/Bar2Pic.jpeg");
+    background-repeat: no-repeat;
+    background-position: start start;
+    background-size: cover;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    box-shadow: none;
+}
+
+#hero-image h1 {
+    color: rgb(255, 244, 230);
+    font-size: 40px;
+    margin: 20px;
+}
+
+#hero-image p {
+    color: rgb(255, 244, 230);
+    font-size: 15px;
+    margin: 20px;
+    max-width: 400px;
+}
+
+#hero-image p span {
+    color: black;
+    font-weight: bold;
+}
+
+#hero-image button {
+    background: none;
+    border: none;
+    color: black;
+    font-size: 18px; /* Increased font size */
+    font-weight: bold; /* Made the text thicker */
+    cursor: pointer;
+    padding: 5px;
+    margin: 20px;
+}
+
+#hero-image button:hover {
+    color: rgb(248, 243, 213);
+}
+
+/* Text Section Styles */
+#text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#text h3 {
+    color: rgb(255, 244, 230);
+    font-size: 30px; /* Increased font size */
+    font-weight: bold; /* Made the text thicker */
+    margin: 20px;
+}
+
+#text p {
+    color: rgb(255, 244, 230);
+}
+
+#lista {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#lista p {
+    padding: 8px;
+    margin: 10px;
+    color: black;
+    background-color: rgb(255, 237, 220);
+    border-radius: 10%;
+}
+
+#lista p:hover {
+    background-color: rgb(228, 135, 21);
+}
+
+/* Home Section Styles */
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("img/privatespot.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Login Form Styles */
+#login-form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Registration Section Styles */
+.rekistration {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.container {
+    display: none;
+}
+
+.container-login,
+.container-register {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fde6cf;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+    width: 100%;
+}
+
+.rekstriointi h2 {
+    text-align: center;
+    color: rgb(17, 14, 14);
+    font-size: 25px;
+    margin: 20px;
+}
+
+#register-form-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.rekistration input {
+    display: flex;
+    justify-content: center;
+    text-align: start;
+    width: 95%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.rekistration label {
+    display: flex;
+    justify-content: center;
+    margin-left: 10px;
+    padding: 5px 5px;
+}
+
+.rekistration button {
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: rgb(254, 245, 189);
+    color: black;
+}
+
+.rekistration button:hover {
+    background-color: black;
+    color: white;
+}
+
+.rekistration input:hover,
+.rekistration input:focus {
+    background-color: rgb(247, 142, 56);
+    color: black;
+}
+
+/* Form Container Styles */
+.form-container {
+    display: none;
+}
+
+.form-container.active {
+    display: block;
+}
+
+/* Logo Styles */
+#Logo {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 20px;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+#Logo:hover {
+    color: black;
+}
+
+/* Info Section Styles */
+.info-container {
+    position: relative;
+}
+
+.info {
+    background-color: rgb(255, 244, 230);
+    position: relative;
+    float: center;
+    width: 100%;
+    margin: 10% auto;
+    padding: 50px;
+    max-width: 900px;
+}
+
+.ravintola-kuva {
+    float: left;
+    width: 35%;
+    margin-right: 40px;
+    margin-top: 0;
+}
+
+/* Text Styles */
+p {
+    color: black;
+    margin-bottom: 10px;
+}
+
+#lause {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+#teksti {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+/* Image Styles */
+#porkkana_kuva {
+    position: absolute;
+    bottom: 80%;
+    width: 30%;
+    left: 80%;
+}
+
+img {
+    width: 50%;
+    height: auto;
+}
+
+/* Footer Styles */
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Media Queries */
+@media (max-width: 430px) {
+    #nav {
+        height: 45vh;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    nav {
+        background-color: black;
+        height: auto;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    nav ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    label {
+        text-align: center;
+        width: 100%;
+    }
+
+    #porkkana_kuva {
+        width: 50%;
+        position: absolute;
+        bottom: 93%;
+        left: 80%;
+        transform: translateX(-70%);
+    }
+
+    .ravintola-kuva {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 10px;
+    }
+
+    #hero-image {
+        min-height: 200px;
+        max-height: 300px;
+    }
+
+    .info {
+        background-color: #000;
+    }
+
+    h2 {
+        font-size: 25px;
+        color: #000;
+        border-radius: 40px;
+        width: 100%;
+        border: 0.5px solid #050505; /* Adjust the border width and color as needed */
+        padding: 0.5px; /* Optional: Add some padding for better appearance */
+        text-align: center; /* Optional: Center the text */
+    }
+
+    #lause {
+        font-size: 30px;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .info {
+        text-align: center;
+    }
+
+    #Kuva {
+        width: 50px;
+        position: absolute;
+        top: 65px;
+        right: 0;
+        cursor: pointer;
+    }
+
+    div p {
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    div p .ravintola-kuva {
+        width: 380px;
+        height: 300px;
+    }
+}
